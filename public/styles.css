@@ -12,12 +12,15 @@
 }
 body {
     overflow-x:hidden;
+    position: relative;
+    min-height: 100vh;
 }
 
 .color-top {
     position: absolute;
+    top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
     background-image: linear-gradient(black,#2E4374  );
     opacity: 0.28;
@@ -108,6 +111,8 @@ nav {
     margin-bottom: 3%;
 }
 .footer {
-   margin: auto;
-   width: 95%;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 95%;
 }

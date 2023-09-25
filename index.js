@@ -17,6 +17,17 @@ app.get("/", (req,res)=>{
     // res.sendFile(dir + "/views/main.html");
 })
 
+app.get("/about", (req,res)=>{
+    res.render("about.ejs");
+})
+
+app.get("/portfolio", (req,res)=>{
+    res.render("portfolio.ejs");
+})
+
+app.get("/contact", (req,res)=>{
+    res.render("contact.ejs");
+})
 
 
 
