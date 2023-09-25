@@ -14,6 +14,7 @@ body {
     overflow-x:hidden;
     position: relative;
     min-height: 100vh;
+    text-align: center;
 }
 
 .color-top {
@@ -111,8 +112,60 @@ nav {
     margin-bottom: 3%;
 }
 .footer {
+    z-index: -2;
+    margin-top: 10rem;
     position: absolute;
-    bottom: 0;
+    top: 225vh;
     margin: auto;
     width: 95%;
+}
+
+
+
+
+/* ------about page-------- */
+
+
+.about-container {
+    padding-top: 5rem;
+    text-align: left;
+    margin: 2rem;
+    font-size: 1.5rem;
+    min-height: 90vh;
+}
+li {
+    list-style-type: none;
+}
+.about-img {
+    width: 80%;
+}
+.about-header {
+    text-align: center;
+    font-size: 5rem;
+}
+.about-para {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.extra-curr {
+    margin-left: 4rem;
+}
+.car-items {
+    height: 20rem;
+}
+
+.about-bottom {
+    padding-top: 5rem;
+    padding: 60px;
+    background-image: radial-gradient(rgba(122, 60, 214, 0.2), rgb(0, 0, 0,0));
+}
+.car-text {
+    font-size: 3rem;
+    margin-bottom: 10rem;
+}
+.skills {
+    padding-right: 40px;
+}
+.tools {
+    padding-left: 40px;
 }
