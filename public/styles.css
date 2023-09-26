@@ -16,6 +16,22 @@ body {
     min-height: 100vh;
     text-align: center;
 }
+body:hover > .trailer {
+    opacity: 1;
+}
+
+
+.trailer {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
 
 .color-top {
     position: absolute;
@@ -173,4 +189,33 @@ li {
 }
 .tools {
     padding-left: 40px;
+}
+
+
+/* contact page */
+.contact-container {
+    padding: 50px;
+    margin-top: 4rem;
+}
+.contact-img {
+    margin-top: 10%;
+    width: 75%;
+    height: 80%;
+    border-radius: 20px;
+}
+.contact-header {
+    padding-bottom: 4rem;
+}
+.contact-text {
+    padding-top: 2rem;
+}
+.loc-text {
+    padding-top: 3rem;
+}
+.links {
+    margin-top: 4rem;
+}
+.link {
+    padding-left: 10px;
+    padding-right: 10px;
 }

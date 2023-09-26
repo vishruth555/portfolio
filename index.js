@@ -1,6 +1,8 @@
 import Express from "express";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import  BodyParser  from "body-parser";
+import bodyParser from "body-parser";
 const dir = dirname(fileURLToPath(import.meta.url));
 
 const app = Express();
@@ -9,7 +11,7 @@ const port = 3000;
 
 
 app.use(Express.static("public"));
-
+app.use(bodyParser.urlencoded({extended: true}));
 
 
 app.get("/", (req,res)=>{
@@ -27,6 +29,12 @@ app.get("/portfolio", (req,res)=>{
 
 app.get("/contact", (req,res)=>{
     res.render("contact.ejs");
+})
+
+
+app.post("/submit", (req,res)=>{
+    window.location.href = "/"
+    console.log(req.body);
 })
 
 
