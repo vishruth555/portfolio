@@ -150,9 +150,14 @@ li {
 .extra-curr {
     margin-left: 4rem;
 }
-.car-items {
-    height: 20rem;
-}
+/* .car-items {
+    height: 30rem;
+} */
+.carousel {
+    width:640px;
+    height:360px;
+    margin: auto;
+  }
 
 .about-bottom {
     padding-top: 5rem;
