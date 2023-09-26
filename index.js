@@ -33,8 +33,8 @@ app.get("/contact", (req,res)=>{
 
 
 app.post("/submit", (req,res)=>{
-    window.location.href = "/"
     console.log(req.body);
+    res.redirect("/contact")
 })
 
 
